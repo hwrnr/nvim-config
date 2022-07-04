@@ -43,6 +43,10 @@ set number relativenumber
 set cursorline
 set mouse=a
 
+map <Space>bn :bnext<CR>
+map <Space>bp :bprevious<CR>
+map <Space>bc :bdelete<CR>
+
 set nowrap
 
 "End dein Scripts-------------------------e
