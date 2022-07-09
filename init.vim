@@ -47,6 +47,17 @@ map <Space>bn :bnext<CR>
 map <Space>bp :bprevious<CR>
 map <Space>bc :bdelete<CR>
 
+" Splits
+nnoremap sg :vsplit<CR>
+nnoremap sh :split<CR>
+
+" Move between splits
+nnoremap <Space>j <C-W><C-J>
+nnoremap <Space>k <C-W><C-K>
+nnoremap <Space>l <C-W><C-L>
+nnoremap <Space>h <C-W><C-H>
+
+
 set nowrap
 
 "End dein Scripts-------------------------e
