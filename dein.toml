@@ -40,6 +40,9 @@ let NERDTreeShowHidden = 1
 '''
 
 [[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
 repo = 'preservim/nerdcommenter'
 hook_add = '''
 " Create default mappings
@@ -54,7 +57,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
 map <Space>cl :call nerdcommenter#Comment('', 'toggle')<CR>
