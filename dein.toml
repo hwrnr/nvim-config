@@ -66,6 +66,12 @@ endif
 if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
+
+command! -nargs=0 Format :call CocActionAsync('format')
+map <Space>bf :Format<CR>
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 '''
 
 [[plugins]]
@@ -80,7 +86,6 @@ repo = 'mhinz/vim-startify'
 [[plugins]]
 repo = 'sbdchd/neoformat'
 hook_add = '''
-map <Space>bf :Neoformat<CR>
 let g:neoformat_enabled_javascript=['prettier']
 let g:neoformat_enabled_typescript=['prettier']
 '''
