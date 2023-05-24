@@ -57,6 +57,9 @@ nnoremap <Space>k <C-W><C-K>
 nnoremap <Space>l <C-W><C-L>
 nnoremap <Space>h <C-W><C-H>
 
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
+
 
 set nowrap
 

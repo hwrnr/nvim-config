@@ -7,5 +7,8 @@
     "typescriptreact"
   ],
   "tsserver.formatOnType": true,
-  "coc.preferences.formatOnType": true
+  "coc.preferences.formatOnType": true,
+  "coc.source.vimtex.filetypes": ["tex", "latex"],
+  "java.project.referencedLibraries": ["./*"],
+  "python.pythonPath": "python"
 }
