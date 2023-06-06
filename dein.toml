@@ -100,6 +100,19 @@ nmap <silent> <Space>ep :call CocAction('diagnosticPrevious')<CR>
 '''
 
 [[plugins]]
+repo = 'junegunn/fzf.vim'
+hook_add = '''
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
+'''
+
+[[plugins]]
+repo = 'antoinemadec/coc-fzf'
+hook_add = '''
+let g:coc_fzf_preview = ''
+let g:coc_fzf_opts = []
+'''
+
+[[plugins]]
 repo = 'github/copilot.vim'
 hook_add = '''
 map <Space>cp :Copilot panel<CR>
