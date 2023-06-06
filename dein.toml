@@ -59,6 +59,7 @@ let g:coc_global_extensions = [
   \ 'coc-lua',
   \ 'coc-swagger',
   \ 'coc-clangd',
+  \ 'coc-angular',
  \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -163,5 +164,11 @@ repo = 'norcalli/nvim-colorizer.lua'
 hook_add = '''
 set termguicolors
 lua require 'colorizer'.setup()
+'''
+
+[[plugins]]
+repo = 'folke/which-key.nvim'
+hook_add = '''
+lua require("which-key").setup {}
 '''
 
