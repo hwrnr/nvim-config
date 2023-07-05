@@ -45,21 +45,27 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 hook_add = '''
 let g:coc_global_extensions = [
+  \ '@yaegassy/coc-nginx',
+  \ 'coc-angular',
+  \ 'coc-clangd',
+  \ 'coc-css',
+  \ 'coc-docker',
+  \ 'coc-flutter',
+  \ 'coc-git',
+  \ 'coc-html',
+  \ 'coc-java',
+  \ 'coc-json',
+  \ 'coc-lua',
+  \ 'coc-kotlin',
+  \ 'coc-sql',
+  \ 'coc-pyright',
+  \ 'coc-groovy',
+  \ 'coc-react-refactor',
+  \ 'coc-sh',
+  \ 'coc-sql',
+  \ 'coc-swagger',
   \ 'coc-tsserver',
   \ 'coc-vimtex',
-  \ 'coc-json',
-  \ 'coc-pyright',
-  \ 'coc-html',
-  \ 'coc-css',
-  \ 'coc-java',
-  \ 'coc-flutter',
-  \ 'coc-react-refactor',
-  \ 'coc-git',
-  \ 'coc-sql',
-  \ 'coc-lua',
-  \ 'coc-swagger',
-  \ 'coc-clangd',
-  \ 'coc-angular',
  \ ]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
@@ -81,6 +87,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> <Space>cr <Plug>(coc-rename)
+nmap <silent> <Space>cc :CocCommand<CR>
+nmap <silent> <Space>cq :CocCommand fzf-preview.QuickFix<CR>
 
 nnoremap <silent> K :call ShowDocumentation()<CR>
 
@@ -184,4 +192,7 @@ repo = 'folke/which-key.nvim'
 hook_add = '''
 lua require("which-key").setup {}
 '''
+
+[[plugins]]
+repo = 'lervag/vimtex'
 
