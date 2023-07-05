@@ -52,7 +52,6 @@ let g:coc_global_extensions = [
   \ 'coc-docker',
   \ 'coc-flutter',
   \ 'coc-git',
-  \ 'coc-groovy',
   \ 'coc-html',
   \ 'coc-java',
   \ 'coc-json',
