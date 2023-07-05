@@ -11,5 +11,6 @@
   "coc.preferences.formatOnType": true,
   "coc.source.vimtex.filetypes": ["tex", "latex"],
   "java.project.referencedLibraries": ["./*"],
-  "python.pythonPath": "python"
+  "python.pythonPath": "python",
+  "flutter.lsp.initialization.closingLabels": true
 }
