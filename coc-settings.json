@@ -1,16 +1,20 @@
 {
   "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "dart",
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "dart"
+    "python",
+    "py"
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "coc.source.vimtex.filetypes": ["tex", "latex"],
   "java.project.referencedLibraries": ["./*"],
   "python.pythonPath": "python",
+  "python.formatting.provider": "black",
   "flutter.lsp.initialization.closingLabels": true
 }

@@ -58,9 +58,9 @@ let g:coc_global_extensions = [
   \ 'coc-kotlin',
   \ 'coc-lua',
   \ 'coc-pyright',
+  \ 'coc-qml',
   \ 'coc-react-refactor',
   \ 'coc-sh',
-  \ 'coc-sql',
   \ 'coc-sql',
   \ 'coc-swagger',
   \ 'coc-tsserver',
@@ -90,6 +90,7 @@ xmap <Space>a  <Plug>(coc-codeaction-selected)
 nmap <Space>a  <Plug>(coc-codeaction-selected)
 nmap <silent> <Space>cr <Plug>(coc-rename)
 nmap <silent> <Space>cc :CocCommand<CR>
+xmap <silent> <Space>cc :CocCommand<CR>
 nmap <silent> <Space>cq :CocCommand fzf-preview.QuickFix<CR>
 
 nnoremap <silent> K :call ShowDocumentation()<CR>
