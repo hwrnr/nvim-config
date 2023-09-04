@@ -8,7 +8,7 @@ repo = 'morhetz/gruvbox'
 repo = 'scrooloose/nerdtree'
 hook_add = '''
 map <F3> :NERDTreeToggle<CR>
-let NERDTreeWinPos='rightbelow'
+let NERDTreeWinPos='right'
 let NERDTreeMapActivateNode='l'
 let NERDTreeShowHidden = 1
 '''
