@@ -16,5 +16,6 @@
   "java.project.referencedLibraries": ["./*"],
   "python.pythonPath": "python",
   "python.formatting.provider": "black",
-  "flutter.lsp.initialization.closingLabels": true
+  "flutter.lsp.initialization.closingLabels": true,
+  "sql.database": "postgresql"
 }

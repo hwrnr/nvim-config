@@ -89,6 +89,7 @@ nmap <silent> gr <Plug>(coc-references)
 xmap <Space>a  <Plug>(coc-codeaction-selected)
 nmap <Space>a  <Plug>(coc-codeaction-selected)
 nmap <silent> <Space>cr <Plug>(coc-rename)
+nmap <silent> <Space>cs <Plug>(coc-codeaction-cursor)
 nmap <silent> <Space>cc :CocCommand<CR>
 xmap <silent> <Space>cc :CocCommand<CR>
 nmap <silent> <Space>cq :CocCommand fzf-preview.QuickFix<CR>
