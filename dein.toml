@@ -2,7 +2,10 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'morhetz/gruvbox'
+repo = 'hwrnr/gruvbox'
+
+[[plugins]]
+repo = 'ellisonleao/gruvbox.nvim'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -173,6 +176,12 @@ repo = 'hwrnr/baloo.nvim'
 [[plugins]]
 repo = 'vijaymarupudi/nvim-fzf'
 
+[[plguins]]
+repo = 'nvim-treesitter/nvim-treesitter'
+hook_post_update = '''
+:TSUpdate
+'''
+
 [[plugins]]
 repo = 'hwrnr/nvim-fzf-commands'
 hook_add = '''
@@ -196,9 +205,6 @@ repo = 'folke/which-key.nvim'
 hook_add = '''
 lua require("which-key").setup {}
 '''
-
-[[plugins]]
-repo = 'lervag/vimtex'
 
 [[plugins]]
 repo = 'dart-lang/dart-vim-plugin'
