@@ -218,3 +218,6 @@ repo = 'lifepillar/pgsql.vim'
 hook_add = '''
 let g:sql_type_default = 'pgsql'
 '''
+
+[[plugins]]
+repo = 'LunarVim/bigfile.nvim'
