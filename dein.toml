@@ -55,6 +55,7 @@ let g:coc_global_extensions = [
   \ 'coc-docker',
   \ 'coc-flutter',
   \ 'coc-git',
+  \ 'coc-go',
   \ 'coc-html',
   \ 'coc-java',
   \ 'coc-json',
@@ -212,3 +213,8 @@ repo = 'dart-lang/dart-vim-plugin'
 [[plugins]]
 repo = 'thosakwe/vim-flutter'
 
+[[plugins]]
+repo = 'lifepillar/pgsql.vim'
+hook_add = '''
+let g:sql_type_default = 'pgsql'
+'''
