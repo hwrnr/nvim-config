@@ -221,3 +221,14 @@ let g:sql_type_default = 'pgsql'
 
 [[plugins]]
 repo = 'LunarVim/bigfile.nvim'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+hook_post_update = '''
+sh -c "cd app && npx --yes yarn install && npx --yes yarn build"
+'''
+
+hook_add = '''
+let g:mkdp_auto_close = 0
+'''
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
